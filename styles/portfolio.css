@@ -155,17 +155,25 @@ nav .menu li a{
     margin: 0 auto;
 }
 
-#skills .skill-container .skill-box{
+.skill-box {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 24px;
 }
 
+.skill-box .skill-card {
+    flex: 0 0 calc(25% - 18px); 
+    padding: 24px;
+    width: 100%; 
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.237);
+    box-sizing: border-box;
+}
 
-.skill-box .skill-card{
-    padding: 30px;
-    max-width: 267px;
-    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.119);
-
+.skill-box .skill-card:hover {
+    transform: translateY(-10px) scale(1); 
+    box-shadow: 0 12px 60px 0 rgba(11, 11, 11, 0.921);
+    background-color: rgb(207, 221, 252);
 }
 
 .skill-card img{
@@ -175,7 +183,7 @@ nav .menu li a{
 
 .skill-card h3{
     font-size: 20px;
-    color: #181818;
+    color: #1d1d1d;
     margin-bottom: 20px;
 
 }   
